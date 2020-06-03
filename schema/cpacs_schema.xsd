@@ -24185,6 +24185,225 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="realiseAzimutDriveType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseAzimutDriveType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Azimut drive for realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="numberOfAzimutDriveUnits" type="integerBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of azimut drive units
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of azimut drive
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Moment of inertia
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionCylinderType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall dimensions (enveloping box)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesRotationType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="azimutDriveUnit" type="realiseAzimutDriveUnitType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseAzimutDriveUnitType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseAzimutDriveUnitType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Azimut drive unit for realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of each azimut drive unit
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseBrakeType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseBrakeType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Brake for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="numberPerDriveUnit" type="integerBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of brakes per drive unit
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of each brake in [kg]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="deceleration" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Deceleration in normal operation mode in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="decelerationEmergency" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Deceleration in emergency mode in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseCartDrivingUnitType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseCartDrivingUnitType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Cart driving unit</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cart driving unit mass
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseCartType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseCartType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Cart</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="numberOfCartDriveUnits" type="integerBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of cart drive units
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="massPrimaryStructure" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Primary structural mass
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="massRemainingComponents" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of all remaining components (without primary structure, drives and azimut unit).
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall dimensions (inlcuding azimut base plate)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="dimensionsWithoutCamera" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Dimensions without (inlcuding azimut base plate)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="cartDrivingUnit" type="realiseCartDrivingUnitType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="realiseConnectorType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -24214,6 +24433,102 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                         </xsd:annotation>
                     </xsd:element>
                 </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseContactConditionsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseContactConditionsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Contact conditions for Realise UAV interface</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="longitudinalPositionalTolerance" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Longitudinal positional tolerance (in x-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element name="lateralPositionalTolerance" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Lateral positional tolerance (in y-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfPitchTolerancePosAoA" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Positive tolerance of AoA (pitching up relative to x-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfPitchToleranceNegAoA" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Negative tolerance of AoA (pitching down relative to x-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfRollTolerance" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Tolerance of angle of roll (angle about x-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfYawTolerance" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Tolerance of angle of yaw (angle about z-axis)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseControllerType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseControllerType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Controller for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="nominalAcceleration" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Nominal acceleration in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="systemDeadTime" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>systemDeadTime in [s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="timeConstant" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Time constant in [s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -24326,6 +24641,37 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="realiseDimensionCylinderType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseDimensionCylinderType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Dimensions for Realise system using cylinder coordinates</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="radius" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Radius in [m]</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element name="height" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Height in [m]</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="realiseDimensionType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -24341,26 +24687,178 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:annotation>
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
-                <xsd:all>
+                <xsd:sequence>
                     <xsd:element minOccurs="0" name="length" type="doubleBaseType">
                         <xsd:annotation>
-                            <xsd:documentation>length in [m]
+                            <xsd:documentation>Length in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
                     <xsd:element minOccurs="0" name="width" type="doubleBaseType">
                         <xsd:annotation>
-                            <xsd:documentation>width in [m]
+                            <xsd:documentation>Width in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
                     <xsd:element minOccurs="0" name="height" type="doubleBaseType">
                         <xsd:annotation>
-                            <xsd:documentation>height in [m]
+                            <xsd:documentation>Height in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                </xsd:all>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseDriveUnitType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseDriveUnitType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Drive unit for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of driving unit
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseDrivingWheelType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseDrivingWheelType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Driving wheel for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="numberPerDriveUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of wheels for each drive unit
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of each driving wheel in [kg]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Moment of inertia [N*m^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="radius" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Rolling radius in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="frictionCoefficientDry" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Friction coefficient for dry surfaces
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="frictionCoefficientWet" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Friction coefficient for wet surfaces
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseElectricPropertiesType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseElectricPropertiesType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Electric properties</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="charge" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Power charging
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="discharge" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Power discharging
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseEnergyType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseEnergyType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Energy properties</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="energyQuantity" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Amount of Energy
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -24400,6 +24898,78 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                         </xsd:annotation>
                     </xsd:element>
                 </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseGpsDeviationsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseGpsDeviationsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Maximum permissable deviations for GPS</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="horizontalPlane" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum permissable deviation in x-y-plane in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="height" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum permissable deviation in z-direction in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseLandingZoneType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseLandingZoneType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Landing zone for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="length" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Length in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="width" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Width in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="positionInRendevousZone" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Beginning of landing zone relative to the beginning of the rendevous zone in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -24467,6 +25037,197 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="realiseMaximumAccelerationsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseMaximumAccelerationsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Operating limits for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="maxAcceleration" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum acceleration for take-off at MTOM in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="maxDeceleration" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum deceleration for landing at MLM in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="touchDownShock" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Touch-down shock at MLM in [m / s^2]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseMaximumMassesType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseMaximumMassesType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Maximum masses for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="MTOM" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum take-off mass of UAV in [kg]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="MLM" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum landing mass of UAV in [kg]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseMaximumSpeedsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseMaximumSpeedsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Operating limits for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="maxTakeoffSpeed" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Safety speed of UAV for take-off at MTOM in [m / s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="maxLandingSpeed" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Landing speed of UAV for approach and landing at MLM in [m / s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseMotorType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseMotorType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Motor for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of Motor
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="nominalCurrent" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Nominal current in [A]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="nominalSpeed" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Nominal speed in [rad / s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="nominalTorque" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Torque at nominal speed in [N * m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="temperatureLimit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Limit of thermal load in [°C]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="temperatureBehaviour" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>File path to characteristic map/diagrams
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseOperatingLimitsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseOperatingLimitsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Operating limits for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="maxPermissableMass" type="realiseMaximumMassesType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="maxSpeeds" type="realiseMaximumSpeedsType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="maxAccelerations" type="realiseMaximumAccelerationsType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="wind" type="realiseWindType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="realiseOperatingParametersType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -24475,7 +25236,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                         <ddue:para>realiseOperatingParametersType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating parameters and requirements for Realise System</ddue:para>
+                        <ddue:para>Operating parameters and requirements for Realise system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -24485,19 +25246,93 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                 <xsd:sequence>
                     <xsd:element minOccurs="0" name="operatingSegments" type="realiseOperatingSegmentsType">
                         <xsd:annotation>
-                            <xsd:documentation>Operating Segments
+                            <xsd:documentation>Operating segments
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
                     <xsd:element minOccurs="0" name="operatingLimits" type="realiseOperatingLimitsType">
                         <xsd:annotation>
-                            <xsd:documentation>Operating Limits
+                            <xsd:documentation>Operating limits
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
                     <xsd:element minOccurs="0" name="positioningUncertainty" type="realisePositioningUncertaintyType">
                         <xsd:annotation>
                             <xsd:documentation>Uncertanties for positioning
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseOperatingSegmentsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseOperatingSegmentsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Operating segments for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="operatingTrackSections" type="realiseOperatingTrackSectionsType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="landingZone" type="realiseLandingZoneType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="safetyArea" type="realiseSafetyAreaType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="targetArea" type="realiseTargetAreaType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseOperatingTrackSectionsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseOperatingTrackSectionsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Operating track sections for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="accelerationZone" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Acceleration zone in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="rendevousZone" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Rendevous zone in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="brakingZone" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Braking zone in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="crashZone" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Crash zone in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -24549,6 +25384,82 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                     <xsd:element minOccurs="0" name="usableTrackLanding" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Usable track for landing in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realisePositioningUncertaintyType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realisePositioningUncertaintyType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Positioning uncertainty for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="GPS" type="realiseGpsDeviationsType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="system" type="realiseSystemDeviationsType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realisePowerPackType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realisePowerPackType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Power pack for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of power pack
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="nominalVoltage" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Nominal voltage of power pack
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall power pack dimensions (enveloping box)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="electricProperties" type="realiseElectricPropertiesType">
+                        <xsd:annotation>
+                            <xsd:documentation>Electric input/output of power pack
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="energy" type="realiseEnergyType">
+                        <xsd:annotation>
+                            <xsd:documentation>Electric input/output of power pack
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -24620,6 +25531,137 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="realiseSafetyAreaType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseSafetyAreaType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Safety area for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="safetyDistanceFrontRear" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Safety distance front/rear (relative to track)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="safetyDistanceSide" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Safety distance to the side (relative to track)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="obstacleClearance" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Obstacle clearance to 15m (relative to track)
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseSledgeSystemType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseSledgeSystemType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Sledge system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="overallDimensions" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall sledge system dimensions
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="sledge" type="realiseSledgeType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="cart" type="realiseCartType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="azimutDrive" type="realiseAzimutDriveType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="uavInterface" type="realiseUavInterfaceType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseSledgeType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseSledgeType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Sledge for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="numberPowerPacks" type="integerBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of power packs for sledge
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="numberDriveUnits" type="integerBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Number of drive units for sledge
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="massPrimaryStructure" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Primary structural mass
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="massRemainingComponents" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of all remaining components (without primary structure, power pack and drives).
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall sledge dimensions
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="powerPack" type="realisePowerPackType">
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="driveUnit" type="realiseDriveUnitType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="realiseSpecialTrackElementType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -24645,6 +25687,73 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                     <xsd:element minOccurs="0" name="otherElements" type="realiseOtherElementsType">
                         <xsd:annotation>
                             <xsd:documentation>Other elements with reduced track length
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseSystemDeviationsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseSystemDeviationsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Maximum permissable deviations for Realise system.
+                            Measurement error after one passage starting from calibrated position.</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="longitudinal" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>x-position of sledge on track in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="lateral" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>y-position of cart on sledge in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseTargetAreaType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseTargetAreaType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Target area for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="longitudinalTargetWindow" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Longitudinal target window (x-axis) in [m]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="lateralTargetWindow" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Lateral target window (y-axis) in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -24774,6 +25883,179 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                     <xsd:element minOccurs="0" name="operatingParameters" type="realiseOperatingParametersType">
                         <xsd:annotation>
                             <xsd:documentation>Operating parameters and requirements for Realise system
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseUavAdjustmentsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseUavAdjustmentsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>UAV interface adjustments for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="heightAboveGroundLevel" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Reference point of main contact
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfIncidenceTakeoff" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Angle of attack of moving UAV for take-off
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="angleOfIncidenceLanding" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Angle of attack of moving UAV for take-off
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseUavInterfaceType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseUavInterfaceType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>UAV interface for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Mass of UAV interface
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Moment of inertia
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element name="overallDimensions" type="realiseDimensionType">
+                        <xsd:annotation>
+                            <xsd:documentation>Overall UAV interface dimensions
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="adjustments" type="realiseUavAdjustmentsType">
+                        <xsd:annotation>
+                            <xsd:documentation>Adjustments of UAV interface
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="contactConditions" type="realiseContactConditionsType">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseVelocitiesRotationType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseVelocitiesRotationType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Rotational velocities for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="maximumRotationSpeed" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum rotation speed
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseVelocitiesType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseVelocitiesType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Velocities for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element name="maximumDrivingSpeed" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum driving speed
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="realiseWindType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>realiseWindType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para>Wind limits for Realise system</ddue:para>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="maxTailwind" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum permissable tailwind component in [m / s]
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="maxCrosswind" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Maximum permissable crosswind component in [m / s]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
