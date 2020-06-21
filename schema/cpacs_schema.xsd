@@ -3320,6 +3320,11 @@ marko.alder@dlr.de
                             <xsd:documentation>Description of airport</xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
+                    <xsd:element minOccurs="0" name="analyses" type="airportAnalysesType">
+                        <xsd:annotation>
+                            <xsd:documentation>Airport analyses results</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
                     <xsd:element minOccurs="0" name="iataCode" type="stringBaseType">
                         <xsd:annotation>
                             <xsd:documentation>IATA 3-letter-code</xsd:documentation>
