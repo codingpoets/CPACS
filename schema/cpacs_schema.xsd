@@ -10104,7 +10104,7 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element maxOccurs="unbounded" name="runways" type="costRunwayType">
+                    <xsd:element maxOccurs="unbounded" name="runway" type="costRunwayType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
