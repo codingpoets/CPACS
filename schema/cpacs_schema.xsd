@@ -16357,6 +16357,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                 <xsd:sequence>
                     <xsd:element minOccurs="0" name="name" type="stringBaseType"/>
                     <xsd:element minOccurs="0" name="description" type="stringBaseType"/>
+                    <xsd:element minOccurs="0" name="parentUID" type="stringUIDBaseType" />
                     <xsd:element name="cost" type="doubleBaseType"/>
                 </xsd:sequence>
             </xsd:extension>
