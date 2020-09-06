@@ -26485,12 +26485,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseAreaSectionsType">
+    <xsd:complexType name="GROLASAreaSectionsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseAreaSectionsType</ddue:para>
+                        <ddue:para>GROLASAreaSectionsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Area sections</ddue:para>
@@ -26512,15 +26512,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseAzimutDriveType">
+    <xsd:complexType name="GROLASAzimutDriveType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseAzimutDriveType</ddue:para>
+                        <ddue:para>GROLASAzimutDriveType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Azimut drive for realise system</ddue:para>
+                        <ddue:para>Azimut drive for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26546,30 +26546,30 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionCylinderType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionCylinderType">
                         <xsd:annotation>
                             <xsd:documentation>Overall dimensions (enveloping box)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesRotationType">
+                    <xsd:element minOccurs="0" name="velocities" type="GROLASVelocitiesRotationType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="azimutDriveUnit" type="realiseAzimutDriveUnitType">
+                    <xsd:element minOccurs="0" name="azimutDriveUnit" type="GROLASAzimutDriveUnitType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseAzimutDriveUnitType">
+    <xsd:complexType name="GROLASAzimutDriveUnitType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseAzimutDriveUnitType</ddue:para>
+                        <ddue:para>GROLASAzimutDriveUnitType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Azimut drive unit for realise system</ddue:para>
+                        <ddue:para>Azimut drive unit for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26583,28 +26583,28 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    <xsd:element minOccurs="0" name="drivingWheel" type="GROLASDrivingWheelType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    <xsd:element minOccurs="0" name="motor" type="GROLASMotorType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    <xsd:element minOccurs="0" name="controller" type="GROLASControllerType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    <xsd:element minOccurs="0" name="brake" type="GROLASBrakeType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseBrakeType">
+    <xsd:complexType name="GROLASBrakeType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseBrakeType</ddue:para>
+                        <ddue:para>GROLASBrakeType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Brake for Realise system</ddue:para>
+                        <ddue:para>Brake for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26641,12 +26641,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseCartDrivingUnitType">
+    <xsd:complexType name="GROLASCartDrivingUnitType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseCartDrivingUnitType</ddue:para>
+                        <ddue:para>GROLASCartDrivingUnitType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Cart driving unit</ddue:para>
@@ -26663,25 +26663,25 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    <xsd:element minOccurs="0" name="drivingWheel" type="GROLASDrivingWheelType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    <xsd:element minOccurs="0" name="motor" type="GROLASMotorType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    <xsd:element minOccurs="0" name="controller" type="GROLASControllerType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    <xsd:element minOccurs="0" name="brake" type="GROLASBrakeType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseCartType">
+    <xsd:complexType name="GROLASCartType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseCartType</ddue:para>
+                        <ddue:para>GROLASCartType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Cart</ddue:para>
@@ -26710,36 +26710,36 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall dimensions (inlcuding azimut base plate)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="dimensionsWithoutCamera" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="dimensionsWithoutCamera" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Dimensions without (inlcuding azimut base plate)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesType">
+                    <xsd:element minOccurs="0" name="velocities" type="GROLASVelocitiesType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="cartDrivingUnit" type="realiseCartDrivingUnitType">
+                    <xsd:element minOccurs="0" name="cartDrivingUnit" type="GROLASCartDrivingUnitType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseConnectorType">
+    <xsd:complexType name="GROLASConnectorType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseConnectorType</ddue:para>
+                        <ddue:para>GROLASConnectorType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Connector for Realise rails</ddue:para>
+                        <ddue:para>Connector for GROLAS rails</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26764,15 +26764,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseContactConditionsType">
+    <xsd:complexType name="GROLASContactConditionsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseContactConditionsType</ddue:para>
+                        <ddue:para>GROLASContactConditionsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Contact conditions for Realise UAV interface</ddue:para>
+                        <ddue:para>Contact conditions for GROLAS UAV interface</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26821,15 +26821,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseControllerType">
+    <xsd:complexType name="GROLASControllerType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseControllerType</ddue:para>
+                        <ddue:para>GROLASControllerType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Controller for Realise system</ddue:para>
+                        <ddue:para>Controller for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26860,15 +26860,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseCrashElementType">
+    <xsd:complexType name="GROLASCrashElementType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseCrashElementType</ddue:para>
+                        <ddue:para>GROLASCrashElementType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Crash elements for Realise system</ddue:para>
+                        <ddue:para>Crash elements for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26900,7 +26900,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall dimensions (enveloping box)
                             </xsd:documentation>
@@ -26911,15 +26911,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseCrossbeamType">
+    <xsd:complexType name="GROLASCrossbeamType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseCrossbeamType</ddue:para>
+                        <ddue:para>GROLASCrossbeamType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Crossbeam for Realise system</ddue:para>
+                        <ddue:para>Crossbeam for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26939,25 +26939,25 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="1" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
-                            <xsd:documentation>Overall dimension for Realize system (the containing box)
+                            <xsd:documentation>Overall dimension for GROLAS system (the containing box)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="packingDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="1" name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="materialCharacteristics" type="realiseMaterialCharacteristicsType">
+                    <xsd:element minOccurs="0" name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
                         <xsd:annotation>
                             <xsd:documentation>Crossbeam material characteristics
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="areaSection" type="realiseAreaSectionsType">
+                    <xsd:element minOccurs="0" name="areaSection" type="GROLASAreaSectionsType">
                         <xsd:annotation>
                             <xsd:documentation>Area sections
                             </xsd:documentation>
@@ -26968,15 +26968,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseDimensionCylinderType">
+    <xsd:complexType name="GROLASDimensionCylinderType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseDimensionCylinderType</ddue:para>
+                        <ddue:para>GROLASDimensionCylinderType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Dimensions for Realise system using cylinder coordinates</ddue:para>
+                        <ddue:para>Dimensions for GROLAS system using cylinder coordinates</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -26999,15 +26999,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseDimensionType">
+    <xsd:complexType name="GROLASDimensionType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseDimensionType</ddue:para>
+                        <ddue:para>GROLASDimensionType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Dimensions for Realise system</ddue:para>
+                        <ddue:para>Dimensions for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27038,15 +27038,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseDriveUnitType">
+    <xsd:complexType name="GROLASDriveUnitType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseDriveUnitType</ddue:para>
+                        <ddue:para>GROLASDriveUnitType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Drive unit for Realise system</ddue:para>
+                        <ddue:para>Drive unit for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27060,28 +27060,28 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="drivingWheel" type="realiseDrivingWheelType">
+                    <xsd:element minOccurs="0" name="drivingWheel" type="GROLASDrivingWheelType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="motor" type="realiseMotorType">
+                    <xsd:element minOccurs="0" name="motor" type="GROLASMotorType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="controller" type="realiseControllerType">
+                    <xsd:element minOccurs="0" name="controller" type="GROLASControllerType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brake" type="realiseBrakeType">
+                    <xsd:element minOccurs="0" name="brake" type="GROLASBrakeType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseDrivingWheelType">
+    <xsd:complexType name="GROLASDrivingWheelType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseDrivingWheelType</ddue:para>
+                        <ddue:para>GROLASDrivingWheelType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Driving wheel for Realise system</ddue:para>
+                        <ddue:para>Driving wheel for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27130,12 +27130,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseElectricPropertiesType">
+    <xsd:complexType name="GROLASElectricPropertiesType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseElectricPropertiesType</ddue:para>
+                        <ddue:para>GROLASElectricPropertiesType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Electric properties</ddue:para>
@@ -27163,12 +27163,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseEnergyType">
+    <xsd:complexType name="GROLASEnergyType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseEnergyType</ddue:para>
+                        <ddue:para>GROLASEnergyType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Energy properties</ddue:para>
@@ -27190,12 +27190,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseGeometricalMomentsOfInertiaType">
+    <xsd:complexType name="GROLASGeometricalMomentsOfInertiaType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseGeometricalMomentsOfInertiaType</ddue:para>
+                        <ddue:para>GROLASGeometricalMomentsOfInertiaType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Geometrical moments of inertia. Reference coordinate system in CoG.</ddue:para>
@@ -27229,12 +27229,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseGpsDeviationsType">
+    <xsd:complexType name="GROLASGpsDeviationsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseGpsDeviationsType</ddue:para>
+                        <ddue:para>GROLASGpsDeviationsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Maximum permissable deviations for GPS</ddue:para>
@@ -27262,15 +27262,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseLandingZoneType">
+    <xsd:complexType name="GROLASLandingZoneType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseLandingZoneType</ddue:para>
+                        <ddue:para>GROLASLandingZoneType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Landing zone for Realise system</ddue:para>
+                        <ddue:para>Landing zone for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27301,15 +27301,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseMaterialCharacteristicsType">
+    <xsd:complexType name="GROLASMaterialCharacteristicsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseMaterialCharacteristicsType</ddue:para>
+                        <ddue:para>GROLASMaterialCharacteristicsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Material characteristics definition specific to Realise system</ddue:para>
+                        <ddue:para>Material characteristics definition specific to GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27364,15 +27364,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseMaximumAccelerationsType">
+    <xsd:complexType name="GROLASMaximumAccelerationsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseMaximumAccelerationsType</ddue:para>
+                        <ddue:para>GROLASMaximumAccelerationsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating limits for Realise system</ddue:para>
+                        <ddue:para>Operating limits for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27403,15 +27403,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseMaximumMassesType">
+    <xsd:complexType name="GROLASMaximumMassesType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseMaximumMassesType</ddue:para>
+                        <ddue:para>GROLASMaximumMassesType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Maximum masses for Realise system</ddue:para>
+                        <ddue:para>Maximum masses for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27436,15 +27436,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseMaximumSpeedsType">
+    <xsd:complexType name="GROLASMaximumSpeedsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseMaximumSpeedsType</ddue:para>
+                        <ddue:para>GROLASMaximumSpeedsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating limits for Realise system</ddue:para>
+                        <ddue:para>Operating limits for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27469,15 +27469,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseMotorType">
+    <xsd:complexType name="GROLASMotorType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseMotorType</ddue:para>
+                        <ddue:para>GROLASMotorType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Motor for Realise system</ddue:para>
+                        <ddue:para>Motor for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27526,15 +27526,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseOperatingLimitsType">
+    <xsd:complexType name="GROLASOperatingLimitsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseOperatingLimitsType</ddue:para>
+                        <ddue:para>GROLASOperatingLimitsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating limits for Realise system</ddue:para>
+                        <ddue:para>Operating limits for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27542,28 +27542,28 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="maxPermissableMass" type="realiseMaximumMassesType">
+                    <xsd:element minOccurs="0" name="maxPermissableMass" type="GROLASMaximumMassesType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxSpeeds" type="realiseMaximumSpeedsType">
+                    <xsd:element minOccurs="0" name="maxSpeeds" type="GROLASMaximumSpeedsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxAccelerations" type="realiseMaximumAccelerationsType">
+                    <xsd:element minOccurs="0" name="maxAccelerations" type="GROLASMaximumAccelerationsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="wind" type="realiseWindType">
+                    <xsd:element minOccurs="0" name="wind" type="GROLASWindType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseOperatingParametersType">
+    <xsd:complexType name="GROLASOperatingParametersType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseOperatingParametersType</ddue:para>
+                        <ddue:para>GROLASOperatingParametersType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating parameters and requirements for Realise system</ddue:para>
+                        <ddue:para>Operating parameters and requirements for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27571,19 +27571,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="operatingSegments" type="realiseOperatingSegmentsType">
+                    <xsd:element minOccurs="0" name="operatingSegments" type="GROLASOperatingSegmentsType">
                         <xsd:annotation>
                             <xsd:documentation>Operating segments
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="operatingLimits" type="realiseOperatingLimitsType">
+                    <xsd:element minOccurs="0" name="operatingLimits" type="GROLASOperatingLimitsType">
                         <xsd:annotation>
                             <xsd:documentation>Operating limits
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="positioningUncertainty" type="realisePositioningUncertaintyType">
+                    <xsd:element minOccurs="0" name="positioningUncertainty" type="GROLASPositioningUncertaintyType">
                         <xsd:annotation>
                             <xsd:documentation>Uncertanties for positioning
                             </xsd:documentation>
@@ -27594,15 +27594,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseOperatingSegmentsType">
+    <xsd:complexType name="GROLASOperatingSegmentsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseOperatingSegmentsType</ddue:para>
+                        <ddue:para>GROLASOperatingSegmentsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating segments for Realise system</ddue:para>
+                        <ddue:para>Operating segments for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27610,28 +27610,28 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="operatingTrackSections" type="realiseOperatingTrackSectionsType">
+                    <xsd:element minOccurs="0" name="operatingTrackSections" type="GROLASOperatingTrackSectionsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="landingZone" type="realiseLandingZoneType">
+                    <xsd:element minOccurs="0" name="landingZone" type="GROLASLandingZoneType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="safetyArea" type="realiseSafetyAreaType">
+                    <xsd:element minOccurs="0" name="safetyArea" type="GROLASSafetyAreaType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="targetArea" type="realiseTargetAreaType">
+                    <xsd:element minOccurs="0" name="targetArea" type="GROLASTargetAreaType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseOperatingTrackSectionsType">
+    <xsd:complexType name="GROLASOperatingTrackSectionsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseOperatingTrackSectionsType</ddue:para>
+                        <ddue:para>GROLASOperatingTrackSectionsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Operating track sections for Realise system</ddue:para>
+                        <ddue:para>Operating track sections for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27668,12 +27668,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseOtherElementsType">
+    <xsd:complexType name="GROLASOtherElementsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseOtherElementsType</ddue:para>
+                        <ddue:para>GROLASOtherElementsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Other elements with reduced track length</ddue:para>
@@ -27719,15 +27719,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realisePositioningUncertaintyType">
+    <xsd:complexType name="GROLASPositioningUncertaintyType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realisePositioningUncertaintyType</ddue:para>
+                        <ddue:para>GROLASPositioningUncertaintyType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Positioning uncertainty for Realise system</ddue:para>
+                        <ddue:para>Positioning uncertainty for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27735,24 +27735,24 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="GPS" type="realiseGpsDeviationsType">
+                    <xsd:element minOccurs="0" name="GPS" type="GROLASGpsDeviationsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="system" type="realiseSystemDeviationsType">
+                    <xsd:element minOccurs="0" name="system" type="GROLASSystemDeviationsType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realisePowerPackType">
+    <xsd:complexType name="GROLASPowerPackType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realisePowerPackType</ddue:para>
+                        <ddue:para>GROLASPowerPackType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Power pack for Realise system</ddue:para>
+                        <ddue:para>Power pack for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27772,19 +27772,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall power pack dimensions (enveloping box)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="electricProperties" type="realiseElectricPropertiesType">
+                    <xsd:element minOccurs="0" name="electricProperties" type="GROLASElectricPropertiesType">
                         <xsd:annotation>
                             <xsd:documentation>Electric input/output of power pack
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="energy" type="realiseEnergyType">
+                    <xsd:element minOccurs="0" name="energy" type="GROLASEnergyType">
                         <xsd:annotation>
                             <xsd:documentation>Electric input/output of power pack
                             </xsd:documentation>
@@ -27795,15 +27795,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseRailType">
+    <xsd:complexType name="GROLASRailType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseRailType</ddue:para>
+                        <ddue:para>GROLASRailType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Realise Rail</ddue:para>
+                        <ddue:para>GROLAS Rail</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27823,31 +27823,31 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
-                            <xsd:documentation>Overall dimension for Realize system (the containing box)
+                            <xsd:documentation>Overall dimension for GROLAS system (the containing box)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="packingDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="areaSections" type="realiseAreaSectionsType">
+                    <xsd:element minOccurs="0" name="areaSections" type="GROLASAreaSectionsType">
                         <xsd:annotation>
                             <xsd:documentation>Area sections
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="geometricalMomentsOfInertia" type="realiseGeometricalMomentsOfInertiaType">
+                    <xsd:element minOccurs="0" name="geometricalMomentsOfInertia" type="GROLASGeometricalMomentsOfInertiaType">
                         <xsd:annotation>
                             <xsd:documentation>Geometrical moments of inertia
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="materialCharacteristics" type="realiseMaterialCharacteristicsType">
+                    <xsd:element minOccurs="0" name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
                         <xsd:annotation>
                             <xsd:documentation>Material characteristics
                             </xsd:documentation>
@@ -27858,15 +27858,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseSafetyAreaType">
+    <xsd:complexType name="GROLASSafetyAreaType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseSafetyAreaType</ddue:para>
+                        <ddue:para>GROLASSafetyAreaType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Safety area for Realise system</ddue:para>
+                        <ddue:para>Safety area for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27897,12 +27897,12 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseSledgeSystemType">
+    <xsd:complexType name="GROLASSledgeSystemType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseSledgeSystemType</ddue:para>
+                        <ddue:para>GROLASSledgeSystemType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para>Sledge system</ddue:para>
@@ -27913,34 +27913,34 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall sledge system dimensions
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="sledge" type="realiseSledgeType">
+                    <xsd:element minOccurs="0" name="sledge" type="GROLASSledgeType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="cart" type="realiseCartType">
+                    <xsd:element minOccurs="0" name="cart" type="GROLASCartType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="azimutDrive" type="realiseAzimutDriveType">
+                    <xsd:element minOccurs="0" name="azimutDrive" type="GROLASAzimutDriveType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="uavInterface" type="realiseUavInterfaceType">
+                    <xsd:element minOccurs="0" name="uavInterface" type="GROLASUavInterfaceType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseSledgeType">
+    <xsd:complexType name="GROLASSledgeType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseSledgeType</ddue:para>
+                        <ddue:para>GROLASSledgeType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Sledge for Realise system</ddue:para>
+                        <ddue:para>Sledge for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -27972,32 +27972,32 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall sledge dimensions
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="velocities" type="realiseVelocitiesType">
+                    <xsd:element minOccurs="0" name="velocities" type="GROLASVelocitiesType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="powerPack" type="realisePowerPackType">
+                    <xsd:element minOccurs="0" name="powerPack" type="GROLASPowerPackType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="driveUnit" type="realiseDriveUnitType">
+                    <xsd:element minOccurs="0" name="driveUnit" type="GROLASDriveUnitType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseSpecialTrackElementType">
+    <xsd:complexType name="GROLASSpecialTrackElementType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseSpecialTrackElementType</ddue:para>
+                        <ddue:para>GROLASSpecialTrackElementType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Special track elements for Realise system</ddue:para>
+                        <ddue:para>Special track elements for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28005,13 +28005,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="crashElement" type="realiseCrashElementType">
+                    <xsd:element minOccurs="0" name="crashElement" type="GROLASCrashElementType">
                         <xsd:annotation>
                             <xsd:documentation>Crash element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="otherElements" type="realiseOtherElementsType">
+                    <xsd:element minOccurs="0" name="otherElements" type="GROLASOtherElementsType">
                         <xsd:annotation>
                             <xsd:documentation>Other elements with reduced track length
                             </xsd:documentation>
@@ -28022,15 +28022,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseSystemDeviationsType">
+    <xsd:complexType name="GROLASSystemDeviationsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseSystemDeviationsType</ddue:para>
+                        <ddue:para>GROLASSystemDeviationsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Maximum permissable deviations for Realise system.
+                        <ddue:para>Maximum permissable deviations for GROLAS system.
                             Measurement error after one passage starting from calibrated position.</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
@@ -28056,15 +28056,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseTargetAreaType">
+    <xsd:complexType name="GROLASTargetAreaType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseTargetAreaType</ddue:para>
+                        <ddue:para>GROLASTargetAreaType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Target area for Realise system</ddue:para>
+                        <ddue:para>Target area for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28089,15 +28089,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseTrackElementType">
+    <xsd:complexType name="GROLASTrackElementType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseTrackElementType</ddue:para>
+                        <ddue:para>GROLASTrackElementType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Realise Track Element</ddue:para>
+                        <ddue:para>GROLAS Track Element</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28123,21 +28123,21 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="rail" type="realiseRailType">
+                    <xsd:element minOccurs="0" name="rail" type="GROLASRailType">
                         <xsd:annotation>
-                            <xsd:documentation>Rail for Realise system
+                            <xsd:documentation>Rail for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="crossbeam" type="realiseCrossbeamType">
+                    <xsd:element minOccurs="0" name="crossbeam" type="GROLASCrossbeamType">
                         <xsd:annotation>
-                            <xsd:documentation>Crossbeam for Realize system
+                            <xsd:documentation>Crossbeam for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="connector" type="realiseConnectorType">
+                    <xsd:element minOccurs="0" name="connector" type="GROLASConnectorType">
                         <xsd:annotation>
-                            <xsd:documentation>Connector for Realize system
+                            <xsd:documentation>Connector for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -28146,15 +28146,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseTrackType">
+    <xsd:complexType name="GROLASTrackType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseTrackType</ddue:para>
+                        <ddue:para>GROLASTrackType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Realise Track Definition</ddue:para>
+                        <ddue:para>GROLAS Track Definition</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28162,15 +28162,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="trackElement" type="realiseTrackElementType">
+                    <xsd:element minOccurs="0" name="trackElement" type="GROLASTrackElementType">
                         <xsd:annotation>
                             <xsd:documentation>Track element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="specialTrackElement" type="realiseSpecialTrackElementType">
+                    <xsd:element minOccurs="0" name="specialTrackElement" type="GROLASSpecialTrackElementType">
                         <xsd:annotation>
-                            <xsd:documentation>Special track elements for Realize system
+                            <xsd:documentation>Special track elements for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -28179,15 +28179,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseType">
+    <xsd:complexType name="GROLASType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseType</ddue:para>
+                        <ddue:para>GROLASType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Realise System Definition</ddue:para>
+                        <ddue:para>GROLAS System Definition</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28195,21 +28195,21 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="track" type="realiseTrackType">
+                    <xsd:element minOccurs="0" name="track" type="GROLASTrackType">
                         <xsd:annotation>
-                            <xsd:documentation>Track for Realise System
+                            <xsd:documentation>Track for GROLAS System
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="sledgeSystem" type="realiseSledgeSystemType">
+                    <xsd:element minOccurs="0" name="sledgeSystem" type="GROLASSledgeSystemType">
                         <xsd:annotation>
                             <xsd:documentation>Sledge System
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="operatingParameters" type="realiseOperatingParametersType">
+                    <xsd:element minOccurs="0" name="operatingParameters" type="GROLASOperatingParametersType">
                         <xsd:annotation>
-                            <xsd:documentation>Operating parameters and requirements for Realise system
+                            <xsd:documentation>Operating parameters and requirements for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -28218,15 +28218,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseUavAdjustmentsType">
+    <xsd:complexType name="GROLASUavAdjustmentsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseUavAdjustmentsType</ddue:para>
+                        <ddue:para>GROLASUavAdjustmentsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>UAV interface adjustments for Realise system</ddue:para>
+                        <ddue:para>UAV interface adjustments for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28257,15 +28257,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseUavInterfaceType">
+    <xsd:complexType name="GROLASUavInterfaceType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseUavInterfaceType</ddue:para>
+                        <ddue:para>GROLASUavInterfaceType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>UAV interface for Realise system</ddue:para>
+                        <ddue:para>UAV interface for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28285,34 +28285,34 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element name="overallDimensions" type="realiseDimensionType">
+                    <xsd:element name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall UAV interface dimensions
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="adjustments" type="realiseUavAdjustmentsType">
+                    <xsd:element minOccurs="0" name="adjustments" type="GROLASUavAdjustmentsType">
                         <xsd:annotation>
                             <xsd:documentation>Adjustments of UAV interface
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="contactConditions" type="realiseContactConditionsType">
+                    <xsd:element minOccurs="0" name="contactConditions" type="GROLASContactConditionsType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseVelocitiesRotationType">
+    <xsd:complexType name="GROLASVelocitiesRotationType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseVelocitiesRotationType</ddue:para>
+                        <ddue:para>GROLASVelocitiesRotationType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Rotational velocities for Realise system</ddue:para>
+                        <ddue:para>Rotational velocities for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28331,15 +28331,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseVelocitiesType">
+    <xsd:complexType name="GROLASVelocitiesType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseVelocitiesType</ddue:para>
+                        <ddue:para>GROLASVelocitiesType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Velocities for Realise system</ddue:para>
+                        <ddue:para>Velocities for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -28358,15 +28358,15 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="realiseWindType">
+    <xsd:complexType name="GROLASWindType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>realiseWindType</ddue:para>
+                        <ddue:para>GROLASWindType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
-                        <ddue:para>Wind limits for Realise system</ddue:para>
+                        <ddue:para>Wind limits for GROLAS system</ddue:para>
                     </ddue:remarks>
                 </sd:schemaDoc>
             </xsd:appinfo>
@@ -29690,7 +29690,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                         </xsd:annotation>
                     </xsd:element>
                     <xsd:element minOccurs="0" name="iLS" type="runwayILSType"/>
-                    <xsd:element minOccurs="0" name="realise" type="realiseType"/>
+                    <xsd:element minOccurs="0" name="GROLAS" type="GROLASType"/>
                 </xsd:all>
                 <xsd:attribute name="uID" type="xsd:ID" use="required"/>
             </xsd:extension>
