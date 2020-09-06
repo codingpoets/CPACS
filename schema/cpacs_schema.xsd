@@ -26945,7 +26945,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element name="packingDimensions" type="GROLASDimensionType">
+                    <xsd:element minOccurs="0" name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
@@ -27829,7 +27829,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element name="packingDimensions" type="GROLASDimensionType">
+                    <xsd:element minOccurs="0" name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
