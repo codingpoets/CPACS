@@ -26501,7 +26501,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="loadBearingCrossSection" type="doubleBaseType">
+                    <xsd:element name="loadBearingCrossSection" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Area of the load-bearing cross section in [m^2]
                             </xsd:documentation>
@@ -26534,13 +26534,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of azimut drive
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                    <xsd:element name="momentOfInertia" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Moment of inertia
                             </xsd:documentation>
@@ -26552,9 +26552,9 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="velocities" type="GROLASVelocitiesRotationType">
+                    <xsd:element name="velocities" type="GROLASVelocitiesRotationType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="azimutDriveUnit" type="GROLASAzimutDriveUnitType">
+                    <xsd:element name="azimutDriveUnit" type="GROLASAzimutDriveUnitType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -26577,19 +26577,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each azimut drive unit
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="drivingWheel" type="GROLASDrivingWheelType">
+                    <xsd:element name="drivingWheel" type="GROLASDrivingWheelType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="motor" type="GROLASMotorType">
+                    <xsd:element name="motor" type="GROLASMotorType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="controller" type="GROLASControllerType">
+                    <xsd:element name="controller" type="GROLASControllerType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brake" type="GROLASBrakeType">
+                    <xsd:element name="brake" type="GROLASBrakeType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -26624,13 +26624,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="deceleration" type="doubleBaseType">
+                    <xsd:element name="deceleration" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Deceleration in normal operation mode in [m / s^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="decelerationEmergency" type="doubleBaseType">
+                    <xsd:element name="decelerationEmergency" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Deceleration in emergency mode in [m / s^2]
                             </xsd:documentation>
@@ -26747,13 +26747,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:all>
-                    <xsd:element minOccurs="1" name="numberPerTrackElement" type="integerBaseType">
+                    <xsd:element name="numberPerTrackElement" type="integerBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Number per track elements
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each connector
                             </xsd:documentation>
@@ -26843,13 +26843,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="systemDeadTime" type="doubleBaseType">
+                    <xsd:element name="systemDeadTime" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>systemDeadTime in [s]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="timeConstant" type="doubleBaseType">
+                    <xsd:element name="timeConstant" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Time constant in [s]
                             </xsd:documentation>
@@ -26882,19 +26882,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each crash element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="length" type="doubleBaseType">
+                    <xsd:element name="length" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Length of crash area
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="usableTrack" type="doubleBaseType">
+                    <xsd:element name="usableTrack" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Usable track length
                             </xsd:documentation>
@@ -26933,31 +26933,31 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each crossbeam
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="overallDimensions" type="GROLASDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall dimension for GROLAS system (the containing box)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="packingDimensions" type="GROLASDimensionType">
+                    <xsd:element name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
+                    <xsd:element name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
                         <xsd:annotation>
                             <xsd:documentation>Crossbeam material characteristics
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="areaSection" type="GROLASAreaSectionsType">
+                    <xsd:element name="areaSection" type="GROLASAreaSectionsType">
                         <xsd:annotation>
                             <xsd:documentation>Area sections
                             </xsd:documentation>
@@ -27015,19 +27015,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="length" type="doubleBaseType">
+                    <xsd:element name="length" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Length in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="width" type="doubleBaseType">
+                    <xsd:element name="width" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Width in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="height" type="doubleBaseType">
+                    <xsd:element name="height" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Height in [m]
                             </xsd:documentation>
@@ -27060,13 +27060,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="drivingWheel" type="GROLASDrivingWheelType">
+                    <xsd:element name="drivingWheel" type="GROLASDrivingWheelType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="motor" type="GROLASMotorType">
+                    <xsd:element name="motor" type="GROLASMotorType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="controller" type="GROLASControllerType">
+                    <xsd:element name="controller" type="GROLASControllerType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brake" type="GROLASBrakeType">
+                    <xsd:element name="brake" type="GROLASBrakeType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -27095,31 +27095,31 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each driving wheel in [kg]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                    <xsd:element name="momentOfInertia" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Moment of inertia [N*m^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="radius" type="doubleBaseType">
+                    <xsd:element name="radius" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Rolling radius in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="frictionCoefficientDry" type="doubleBaseType">
+                    <xsd:element name="frictionCoefficientDry" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Friction coefficient for dry surfaces
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="frictionCoefficientWet" type="doubleBaseType">
+                    <xsd:element name="frictionCoefficientWet" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Friction coefficient for wet surfaces
                             </xsd:documentation>
@@ -27152,7 +27152,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="discharge" type="doubleBaseType">
+                    <xsd:element name="discharge" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Power discharging
                             </xsd:documentation>
@@ -27206,19 +27206,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:all>
-                    <xsd:element minOccurs="0" name="axialDirectionOfLoad" type="doubleBaseType">
+                    <xsd:element name="axialDirectionOfLoad" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Axial in direction of main load (about z-axis) in [m^4]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="axialTraverseDirection" type="doubleBaseType">
+                    <xsd:element name="axialTraverseDirection" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Axial in traverse direction (about y-axis) in [m^4]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="polar" type="doubleBaseType">
+                    <xsd:element name="polar" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>polar in [m^4]
                             </xsd:documentation>
@@ -27245,13 +27245,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="horizontalPlane" type="doubleBaseType">
+                    <xsd:element name="horizontalPlane" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum permissable deviation in x-y-plane in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="height" type="doubleBaseType">
+                    <xsd:element name="height" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum permissable deviation in z-direction in [m]
                             </xsd:documentation>
@@ -27278,19 +27278,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="length" type="doubleBaseType">
+                    <xsd:element name="length" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Length in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="width" type="doubleBaseType">
+                    <xsd:element name="width" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Width in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="positionInRendevousZone" type="doubleBaseType">
+                    <xsd:element name="positionInRendevousZone" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Beginning of landing zone relative to the beginning of the rendevous zone in [m]
                             </xsd:documentation>
@@ -27317,43 +27317,43 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="1" name="material" type="stringBaseType">
+                    <xsd:element name="material" type="stringBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Material name
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="E" type="doubleBaseType">
+                    <xsd:element name="E" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Young's modulus in [N/m^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="1" name="nu" type="doubleBaseType">
+                    <xsd:element name="nu" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Poisson's ratio
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="strengthCompressiveTensile" type="doubleBaseType">
+                    <xsd:element name="strengthCompressiveTensile" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Strength compressive-tensile in [N/m^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="strengthFlexural" type="doubleBaseType">
+                    <xsd:element name="strengthFlexural" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Strength flexural in [N/m^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="strengthShearing" type="doubleBaseType">
+                    <xsd:element name="strengthShearing" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Strength shearing in [N/m^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="strengthTorsion" type="doubleBaseType">
+                    <xsd:element name="strengthTorsion" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Strength torsion in [N/m^2]
                             </xsd:documentation>
@@ -27380,19 +27380,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="maxAcceleration" type="doubleBaseType">
+                    <xsd:element name="maxAcceleration" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum acceleration for take-off at MTOM in [m / s^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxDeceleration" type="doubleBaseType">
+                    <xsd:element name="maxDeceleration" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum deceleration for landing at MLM in [m / s^2]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="touchDownShock" type="doubleBaseType">
+                    <xsd:element name="touchDownShock" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Touch-down shock at MLM in [m / s^2]
                             </xsd:documentation>
@@ -27419,13 +27419,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="MTOM" type="doubleBaseType">
+                    <xsd:element name="MTOM" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum take-off mass of UAV in [kg]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="MLM" type="doubleBaseType">
+                    <xsd:element name="MLM" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum landing mass of UAV in [kg]
                             </xsd:documentation>
@@ -27452,13 +27452,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="maxTakeoffSpeed" type="doubleBaseType">
+                    <xsd:element name="maxTakeoffSpeed" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Safety speed of UAV for take-off at MTOM in [m / s]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxLandingSpeed" type="doubleBaseType">
+                    <xsd:element name="maxLandingSpeed" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Landing speed of UAV for approach and landing at MLM in [m / s]
                             </xsd:documentation>
@@ -27491,31 +27491,31 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="nominalCurrent" type="doubleBaseType">
+                    <xsd:element name="nominalCurrent" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Nominal current in [A]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="nominalSpeed" type="doubleBaseType">
+                    <xsd:element name="nominalSpeed" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Nominal speed in [rad / s]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="nominalTorque" type="doubleBaseType">
+                    <xsd:element name="nominalTorque" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Torque at nominal speed in [N * m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="temperatureLimit" type="doubleBaseType">
+                    <xsd:element name="temperatureLimit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Limit of thermal load in [°C]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="temperatureBehaviour" type="doubleBaseType">
+                    <xsd:element name="temperatureBehaviour" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>File path to characteristic map/diagrams
                             </xsd:documentation>
@@ -27542,13 +27542,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="maxPermissableMass" type="GROLASMaximumMassesType">
+                    <xsd:element name="maxPermissableMass" type="GROLASMaximumMassesType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxSpeeds" type="GROLASMaximumSpeedsType">
+                    <xsd:element name="maxSpeeds" type="GROLASMaximumSpeedsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxAccelerations" type="GROLASMaximumAccelerationsType">
+                    <xsd:element name="maxAccelerations" type="GROLASMaximumAccelerationsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="wind" type="GROLASWindType">
+                    <xsd:element name="wind" type="GROLASWindType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -27571,19 +27571,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="operatingSegments" type="GROLASOperatingSegmentsType">
+                    <xsd:element name="operatingSegments" type="GROLASOperatingSegmentsType">
                         <xsd:annotation>
                             <xsd:documentation>Operating segments
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="operatingLimits" type="GROLASOperatingLimitsType">
+                    <xsd:element name="operatingLimits" type="GROLASOperatingLimitsType">
                         <xsd:annotation>
                             <xsd:documentation>Operating limits
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="positioningUncertainty" type="GROLASPositioningUncertaintyType">
+                    <xsd:element name="positioningUncertainty" type="GROLASPositioningUncertaintyType">
                         <xsd:annotation>
                             <xsd:documentation>Uncertanties for positioning
                             </xsd:documentation>
@@ -27610,13 +27610,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="operatingTrackSections" type="GROLASOperatingTrackSectionsType">
+                    <xsd:element name="operatingTrackSections" type="GROLASOperatingTrackSectionsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="landingZone" type="GROLASLandingZoneType">
+                    <xsd:element name="landingZone" type="GROLASLandingZoneType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="safetyArea" type="GROLASSafetyAreaType">
+                    <xsd:element name="safetyArea" type="GROLASSafetyAreaType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="targetArea" type="GROLASTargetAreaType">
+                    <xsd:element name="targetArea" type="GROLASTargetAreaType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -27639,25 +27639,25 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="accelerationZone" type="doubleBaseType">
+                    <xsd:element name="accelerationZone" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Acceleration zone in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="rendevousZone" type="doubleBaseType">
+                    <xsd:element name="rendevousZone" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Rendevous zone in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="brakingZone" type="doubleBaseType">
+                    <xsd:element name="brakingZone" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Braking zone in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="crashZone" type="doubleBaseType">
+                    <xsd:element name="crashZone" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Crash zone in [m]
                             </xsd:documentation>
@@ -27690,25 +27690,25 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of each crash element in [kg]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="lengthOverall" type="doubleBaseType">
+                    <xsd:element name="lengthOverall" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Overall length in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="usableTrackTakeoff" type="doubleBaseType">
+                    <xsd:element name="usableTrackTakeoff" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Usable track for take-off in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="usableTrackLanding" type="doubleBaseType">
+                    <xsd:element name="usableTrackLanding" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Usable track for landing in [m]
                             </xsd:documentation>
@@ -27735,9 +27735,9 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="GPS" type="GROLASGpsDeviationsType">
+                    <xsd:element name="GPS" type="GROLASGpsDeviationsType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="system" type="GROLASSystemDeviationsType">
+                    <xsd:element name="system" type="GROLASSystemDeviationsType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -27766,7 +27766,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="nominalVoltage" type="doubleBaseType">
+                    <xsd:element name="nominalVoltage" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Nominal voltage of power pack
                             </xsd:documentation>
@@ -27778,13 +27778,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="electricProperties" type="GROLASElectricPropertiesType">
+                    <xsd:element name="electricProperties" type="GROLASElectricPropertiesType">
                         <xsd:annotation>
                             <xsd:documentation>Electric input/output of power pack
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="energy" type="GROLASEnergyType">
+                    <xsd:element name="energy" type="GROLASEnergyType">
                         <xsd:annotation>
                             <xsd:documentation>Electric input/output of power pack
                             </xsd:documentation>
@@ -27811,13 +27811,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:all>
-                    <xsd:element minOccurs="0" name="numberPerTrackElement" type="doubleBaseType">
+                    <xsd:element name="numberPerTrackElement" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>number of rails for each track element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Total rail mass
                             </xsd:documentation>
@@ -27829,25 +27829,25 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="packingDimensions" type="GROLASDimensionType">
+                    <xsd:element name="packingDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Equivalent cuboid for pile volume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="areaSections" type="GROLASAreaSectionsType">
+                    <xsd:element name="areaSections" type="GROLASAreaSectionsType">
                         <xsd:annotation>
                             <xsd:documentation>Area sections
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="geometricalMomentsOfInertia" type="GROLASGeometricalMomentsOfInertiaType">
+                    <xsd:element name="geometricalMomentsOfInertia" type="GROLASGeometricalMomentsOfInertiaType">
                         <xsd:annotation>
                             <xsd:documentation>Geometrical moments of inertia
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
+                    <xsd:element name="materialCharacteristics" type="GROLASMaterialCharacteristicsType">
                         <xsd:annotation>
                             <xsd:documentation>Material characteristics
                             </xsd:documentation>
@@ -27874,19 +27874,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="safetyDistanceFrontRear" type="doubleBaseType">
+                    <xsd:element name="safetyDistanceFrontRear" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Safety distance front/rear (relative to track)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="safetyDistanceSide" type="doubleBaseType">
+                    <xsd:element name="safetyDistanceSide" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Safety distance to the side (relative to track)
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="obstacleClearance" type="doubleBaseType">
+                    <xsd:element name="obstacleClearance" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Obstacle clearance to 15m (relative to track)
                             </xsd:documentation>
@@ -27919,13 +27919,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="sledge" type="GROLASSledgeType">
+                    <xsd:element name="sledge" type="GROLASSledgeType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="cart" type="GROLASCartType">
+                    <xsd:element name="cart" type="GROLASCartType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="azimutDrive" type="GROLASAzimutDriveType">
+                    <xsd:element name="azimutDrive" type="GROLASAzimutDriveType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="uavInterface" type="GROLASUavInterfaceType">
+                    <xsd:element name="uavInterface" type="GROLASUavInterfaceType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -27954,19 +27954,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="numberDriveUnits" type="integerBaseType">
+                    <xsd:element name="numberDriveUnits" type="integerBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Number of drive units for sledge
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="massPrimaryStructure" type="doubleBaseType">
+                    <xsd:element name="massPrimaryStructure" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Primary structural mass
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="massRemainingComponents" type="doubleBaseType">
+                    <xsd:element name="massRemainingComponents" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of all remaining components (without primary structure, power pack and drives).
                             </xsd:documentation>
@@ -27978,11 +27978,11 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="velocities" type="GROLASVelocitiesType">
+                    <xsd:element name="velocities" type="GROLASVelocitiesType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="powerPack" type="GROLASPowerPackType">
+                    <xsd:element name="powerPack" type="GROLASPowerPackType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="driveUnit" type="GROLASDriveUnitType">
+                    <xsd:element name="driveUnit" type="GROLASDriveUnitType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -28039,13 +28039,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="longitudinal" type="doubleBaseType">
+                    <xsd:element name="longitudinal" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>x-position of sledge on track in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="lateral" type="doubleBaseType">
+                    <xsd:element name="lateral" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>y-position of cart on sledge in [m]
                             </xsd:documentation>
@@ -28072,13 +28072,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="longitudinalTargetWindow" type="doubleBaseType">
+                    <xsd:element name="longitudinalTargetWindow" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Longitudinal target window (x-axis) in [m]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="lateralTargetWindow" type="doubleBaseType">
+                    <xsd:element name="lateralTargetWindow" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Lateral target window (y-axis) in [m]
                             </xsd:documentation>
@@ -28105,37 +28105,37 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:all>
-                    <xsd:element minOccurs="0" name="number" type="integerBaseType">
+                    <xsd:element name="number" type="integerBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Number of track elements
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="length" type="doubleBaseType">
+                    <xsd:element name="length" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Length of each track element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="trackWidth" type="doubleBaseType">
+                    <xsd:element name="trackWidth" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Width of each track element
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="rail" type="GROLASRailType">
+                    <xsd:element name="rail" type="GROLASRailType">
                         <xsd:annotation>
                             <xsd:documentation>Rail for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="crossbeam" type="GROLASCrossbeamType">
+                    <xsd:element name="crossbeam" type="GROLASCrossbeamType">
                         <xsd:annotation>
                             <xsd:documentation>Crossbeam for GROLAS system
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="connector" type="GROLASConnectorType">
+                    <xsd:element name="connector" type="GROLASConnectorType">
                         <xsd:annotation>
                             <xsd:documentation>Connector for GROLAS system
                             </xsd:documentation>
@@ -28162,7 +28162,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="trackElement" type="GROLASTrackElementType">
+                    <xsd:element name="trackElement" type="GROLASTrackElementType">
                         <xsd:annotation>
                             <xsd:documentation>Track element
                             </xsd:documentation>
@@ -28195,19 +28195,19 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="track" type="GROLASTrackType">
+                    <xsd:element name="track" type="GROLASTrackType">
                         <xsd:annotation>
                             <xsd:documentation>Track for GROLAS System
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="sledgeSystem" type="GROLASSledgeSystemType">
+                    <xsd:element name="sledgeSystem" type="GROLASSledgeSystemType">
                         <xsd:annotation>
                             <xsd:documentation>Sledge System
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="operatingParameters" type="GROLASOperatingParametersType">
+                    <xsd:element name="operatingParameters" type="GROLASOperatingParametersType">
                         <xsd:annotation>
                             <xsd:documentation>Operating parameters and requirements for GROLAS system
                             </xsd:documentation>
@@ -28374,13 +28374,13 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="maxTailwind" type="doubleBaseType">
+                    <xsd:element name="maxTailwind" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum permissable tailwind component in [m / s]
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="maxCrosswind" type="doubleBaseType">
+                    <xsd:element name="maxCrosswind" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Maximum permissable crosswind component in [m / s]
                             </xsd:documentation>
