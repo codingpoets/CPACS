@@ -27913,7 +27913,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element name="overallDimensions" type="GROLASDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall sledge system dimensions
                             </xsd:documentation>
@@ -28273,31 +28273,31 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="mass" type="doubleBaseType">
+                    <xsd:element name="mass" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Mass of UAV interface
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="momentOfInertia" type="doubleBaseType">
+                    <xsd:element name="momentOfInertia" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Moment of inertia
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element name="overallDimensions" type="GROLASDimensionType">
+                    <xsd:element minOccurs="0" name="overallDimensions" type="GROLASDimensionType">
                         <xsd:annotation>
                             <xsd:documentation>Overall UAV interface dimensions
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="adjustments" type="GROLASUavAdjustmentsType">
+                    <xsd:element name="adjustments" type="GROLASUavAdjustmentsType">
                         <xsd:annotation>
                             <xsd:documentation>Adjustments of UAV interface
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="contactConditions" type="GROLASContactConditionsType">
+                    <xsd:element name="contactConditions" type="GROLASContactConditionsType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
