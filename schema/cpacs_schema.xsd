@@ -27786,7 +27786,7 @@ The fuel tank volume type should also be used for the wing fuel tank</xsd:docume
                     </xsd:element>
                     <xsd:element name="energy" type="GROLASEnergyType">
                         <xsd:annotation>
-                            <xsd:documentation>Electric input/output of power pack
+                            <xsd:documentation>Energy of power pack
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
