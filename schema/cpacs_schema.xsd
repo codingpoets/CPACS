@@ -7965,10 +7965,38 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costDrivingWheels" type="singleGenericCostType" />
-                    <xsd:element name="costMotor" type="singleGenericCostType" />
-                    <xsd:element name="costController" type="singleGenericCostType" />
-                    <xsd:element name="costBrakes" type="singleGenericCostType" />
+                    <xsd:element name="costMounting" type="costMountingType" />
+                    <xsd:element name="costAzimutDriveUnit" type="costAzimutDriveUnitType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costAzimutDriveUnitType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costAzimutDriveUnitType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costDrivingSystem" type="costDrivingSystemType" />
+                    <xsd:element name="costMotors" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costSensors" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costControllers" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -7993,6 +8021,41 @@ marko.alder@dlr.de
                     <xsd:element name="costDescription" type="genericCostType"/>
                     <xsd:element maxOccurs="unbounded" minOccurs="0" name="costBellyFairing" type="singleGenericCostType"/>
                 </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costBrakesType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costBrakesType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberPerDriveUnit" type="integerBaseType" />
+                    <xsd:element name="costOfDiscAndShoe" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost of disc and shoe in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element name="costOfActuatorUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost of actuator unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -8107,6 +8170,29 @@ marko.alder@dlr.de
                     <xsd:element name="costDescription" type="genericCostType"/>
                     <xsd:element maxOccurs="unbounded" minOccurs="0" name="costCabinLighting" type="singleGenericCostType"/>
                 </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costCableRoutingType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCableRoutingType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costPerUnit" type="singleGenericCostType" />
+                </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -8282,6 +8368,32 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costCartDriveUnitsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCartDriveUnitsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costDrivingSystem" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costMotor" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costController" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costBrakes" type="costBrakesType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costCartType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -8299,9 +8411,12 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costDrivingUnits" type="costDriveUnitsType" />
-                    <xsd:element name="costPrimaryStructure" type="singleGenericCostType" />
-                    <xsd:element name="costRemainingComponents" type="singleGenericCostType" />
+                    <xsd:element name="numberOfCartDriveUnits" type="integerBaseType" />
+                    <xsd:element name="costPrimaryStructure" type="costGROLASGenericType" />
+                    <xsd:element name="costGuidanceSystem" type="costGuidanceSystemType" />
+                    <xsd:element name="costDriveUnits" type="costCartDriveUnitsType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -8349,6 +8464,35 @@ marko.alder@dlr.de
                     <xsd:element name="costDescription" type="genericCostType"/>
                     <xsd:element maxOccurs="unbounded" minOccurs="0" name="costCell" type="singleGenericCostType"/>
                 </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costChargingUnitsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costChargingUnitsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -8455,6 +8599,35 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costConnectorsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costConnectorsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costControlSurfaceSupportType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -8503,6 +8676,94 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costCrashAbsorberType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCrashAbsorberType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberPerCrashElement" type="integerBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costCrashElementRailsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCrashElementRailsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="number" type="integerBaseType" />
+                    <xsd:element name="numberPerCrashElement" type="integerBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costCrashElementsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCrashElementsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costCrashElementRails" type="costCrashElementRailsType" />
+                    <xsd:element name="costCrashAbsorber" type="costCrashAbsorberType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costCrewMembersType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -8545,6 +8806,59 @@ marko.alder@dlr.de
                     <xsd:element name="costDescription" type="genericCostType"/>
                     <xsd:element maxOccurs="unbounded" minOccurs="0" name="costCrewSeat" type="singleGenericCostType"/>
                 </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costCrossbeamsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costCrossbeamsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costDataConnectionsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costDataConnectionsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costCableAndBusSystem" type="costGROLASGenericType" />
+                    <xsd:element name="costWirelessConnections" type="costGROLASGenericType" />
+                </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -8638,10 +8952,36 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costDrivingWheels" type="singleGenericCostType" />
-                    <xsd:element name="costMotor" type="singleGenericCostType" />
-                    <xsd:element name="costController" type="singleGenericCostType" />
-                    <xsd:element name="costBrakes" type="singleGenericCostType" />
+                    <xsd:element name="costDrivingWheels" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costMotor" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costController" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costBrakes" type="costBrakesType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costDrivingSystemType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costDrivingSystemType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costOfDriveUnit" type="singleGenericCostType" />
+                    <xsd:element name="costLabour" type="singleGenericCostType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -9249,6 +9589,154 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costGROLASGenericLabourType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGROLASGenericLabourType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costLabour" type="singleGenericCostType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costGROLASGenericMaterialType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGROLASGenericMaterialType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costMaterial" type="singleGenericCostType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costGROLASGenericType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGROLASGenericType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costMaterial" type="singleGenericCostType" />
+                    <xsd:element name="costLabour" type="singleGenericCostType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costGROLASGenericUnitMaterialType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGROLASGenericUnitMaterialType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="number" type="integerBaseType" />
+                    <xsd:element name="costPerUnit" type="singleGenericCostType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costGROLASGenericUnitType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGROLASGenericUnitType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="number" type="integerBaseType" />
+                    <xsd:element name="costPerUnit" type="singleGenericCostType" />
+                    <xsd:element name="costLabour" type="singleGenericCostType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costGuidanceSystemType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costGuidanceSystemType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costMainRollers" type="costGROLASGenericUnitMaterialType" />
+                    <xsd:element name="costGuideRollers" type="costGROLASGenericUnitMaterialType" />
+                    <xsd:element name="costCableRouting" type="costCableRoutingType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndAlignment" type="costGROLASGenericLabourType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+
+
     <xsd:complexType name="costHydraulicDistributionType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -9601,6 +10089,33 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costMountingType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costMountingType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costWheelFlange" type="costGROLASGenericMaterialType" />
+                    <xsd:element name="costBearing" type="costGROLASGenericMaterialType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+
     <xsd:complexType name="costMoveableLeadingEdgeType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -9780,6 +10295,35 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costOtherElementsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costOtherElementsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costOverheadBinsType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -9932,6 +10476,32 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costPowerPacksType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costPowerPacksType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costPowerUnits" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costControlUnits" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costPowerUnitsType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -10018,6 +10588,35 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="costRailsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costRailsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="costRibType">
         <xsd:annotation>
             <xsd:appinfo>
@@ -10063,12 +10662,12 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="costRunwayType">
+    <xsd:complexType name="costGROLASType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>costRunwayType</ddue:para>
+                        <ddue:para>costGROLASType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para/>
@@ -10104,7 +10703,7 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element maxOccurs="unbounded" name="runway" type="costRunwayType">
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="runway" type="costGROLASType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -10130,6 +10729,35 @@ marko.alder@dlr.de
                     <xsd:element name="costDescription" type="genericCostType"/>
                     <xsd:element maxOccurs="unbounded" minOccurs="0" name="costSeat" type="singleGenericCostType"/>
                 </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costSensorAttachmentsType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costSensorAttachmentsType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
+                    <xsd:element name="costPerUnit" type="doubleBaseType">
+                        <xsd:annotation>
+                            <xsd:documentation>Cost per unit in EUR.
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -10249,7 +10877,8 @@ marko.alder@dlr.de
                     <xsd:element name="costSledge" type="costSledgeType" />
                     <xsd:element name="costCart" type="costCartType" />
                     <xsd:element name="costAzimutDrives" type="costAzimutDrivesType" />
-                    <xsd:element name="costUavInterface" type="singleGenericCostType" />
+                    <xsd:element name="costUavInterface" type="costGROLASGenericType" />
+                    <xsd:element name="costDataConnections" type="costDataConnectionsType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -10272,10 +10901,14 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costPowerPacks" type="singleGenericCostType" />
+                    <xsd:element name="numberOfPowerPacks" type="integerBaseType" />
+                    <xsd:element name="numberOfDriveUnits" type="integerBaseType" />
+                    <xsd:element name="costPowerPacks" type="costPowerPacksType" />
+                    <xsd:element name="costTrackGuidanceSystem" type="costTrackGuidanceSystemType" />
                     <xsd:element name="costDriveUnits" type="costDriveUnitsType" />
-                    <xsd:element name="costPrimaryStructure" type="singleGenericCostType" />
-                    <xsd:element name="costRemainingComponents" type="singleGenericCostType" />
+                    <xsd:element name="costPrimaryStructure" type="costGROLASGenericType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndTesting" type="costGROLASGenericLabourType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -10344,15 +10977,12 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costCrashElements" type="singleGenericCostType">
+                    <xsd:element name="costCrashElements" type="costCrashElementsType" />
+                    <xsd:element name="costSensorAttachments" type="costSensorAttachmentsType" />
+                    <xsd:element name="costChargingUnits" type="costChargingUnitsType" />
+                    <xsd:element name="costOtherElements" type="costOtherElementsType">
                         <xsd:annotation>
-                            <xsd:documentation>Cost for all crash elements.
-                            </xsd:documentation>
-                        </xsd:annotation>
-                    </xsd:element>
-                    <xsd:element name="costOtherElements" type="singleGenericCostType">
-                        <xsd:annotation>
-                            <xsd:documentation>Combined cost for all special elements excluding crash elements.
+                            <xsd:documentation>Combined cost for all other elements with reduced track length.
                             </xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
@@ -10475,6 +11105,57 @@ marko.alder@dlr.de
                     <xsd:element minOccurs="0" name="costIntegratedModularAvionics" type="costIntegratedModularAvionicsType"/>
                     <xsd:element minOccurs="0" name="costMillitarySystems" type="costMillitarySystemsType"/>
                     <xsd:element minOccurs="0" name="costNavigation" type="costNavigationType"/>
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costTrackElements">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costTrackElements</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costRails" type="costRailsType" />
+                    <xsd:element name="costCrossbeams" type="costCrossbeamsType" />
+                    <xsd:element name="costConnectors" type="costConnectorsType" />
+                </xsd:all>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="costTrackGuidanceSystemType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <sd:schemaDoc>
+                    <ddue:summary>
+                        <ddue:para>costTrackGuidanceSystemType</ddue:para>
+                    </ddue:summary>
+                    <ddue:remarks>
+                        <ddue:para/>
+                    </ddue:remarks>
+                </sd:schemaDoc>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="complexBaseType">
+                <xsd:all>
+                    <xsd:element name="costDescription" type="genericCostType" />
+                    <xsd:element name="costTrackRollers" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costGuideRollers" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costOtherComponents" type="costGROLASGenericType" />
+                    <xsd:element name="costAssemblyAndAlignment" type="costGROLASGenericLabourType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
