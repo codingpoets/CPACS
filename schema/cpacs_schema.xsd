@@ -8385,9 +8385,10 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costDrivingSystem" type="costGROLASGenericUnitType" />
-                    <xsd:element name="costMotor" type="costGROLASGenericUnitType" />
-                    <xsd:element name="costController" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costDrivingSystem" type="costDrivingSystemType" />
+                    <xsd:element name="costMotors" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costSensors" type="costGROLASGenericUnitType" />
+                    <xsd:element name="costControllers" type="costGROLASGenericUnitType" />
                     <xsd:element name="costBrakes" type="costBrakesType" />
                 </xsd:all>
             </xsd:extension>
@@ -8753,12 +8754,7 @@ marko.alder@dlr.de
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
                     <xsd:element name="costCrashElementRails" type="costCrashElementRailsType" />
-                    <xsd:element name="costCrashAbsorber" type="costCrashAbsorberType">
-                        <xsd:annotation>
-                            <xsd:documentation>Cost per unit in EUR.
-                            </xsd:documentation>
-                        </xsd:annotation>
-                    </xsd:element>
+                    <xsd:element name="costCrashAbsorber" type="costCrashAbsorberType" />
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
@@ -10703,7 +10699,7 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:sequence>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="runway" type="costGROLASType">
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="GROLASRunway" type="costGROLASType">
                     </xsd:element>
                 </xsd:sequence>
             </xsd:extension>
@@ -11110,12 +11106,12 @@ marko.alder@dlr.de
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="costTrackElements">
+    <xsd:complexType name="costTrackElementsType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>costTrackElements</ddue:para>
+                        <ddue:para>costTrackElementsType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para/>
@@ -11178,7 +11174,7 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="costTrackElements" type="singleGenericCostType">
+                    <xsd:element name="costTrackElements" type="costTrackElementsType">
                         <xsd:annotation>
                             <xsd:documentation>Cost for all common track elements, excluding special track elements.
                             </xsd:documentation>
