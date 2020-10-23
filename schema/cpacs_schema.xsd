@@ -8042,7 +8042,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberPerDriveUnit" type="integerBaseType" />
                     <xsd:element name="costOfDiscAndShoe" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost of disc and shoe in EUR.
@@ -8412,7 +8411,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberOfCartDriveUnits" type="integerBaseType" />
                     <xsd:element name="costPrimaryStructure" type="costGROLASGenericType" />
                     <xsd:element name="costGuidanceSystem" type="costGuidanceSystemType" />
                     <xsd:element name="costDriveUnits" type="costCartDriveUnitsType" />
@@ -8486,7 +8484,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -8617,7 +8614,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -8694,7 +8690,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberPerCrashElement" type="integerBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -8723,8 +8718,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="number" type="integerBaseType" />
-                    <xsd:element name="numberPerCrashElement" type="integerBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -8823,7 +8816,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -9672,7 +9664,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="number" type="integerBaseType" />
                     <xsd:element name="costPerUnit" type="singleGenericCostType" />
                 </xsd:all>
             </xsd:extension>
@@ -9696,7 +9687,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="number" type="integerBaseType" />
                     <xsd:element name="costPerUnit" type="singleGenericCostType" />
                     <xsd:element name="costLabour" type="singleGenericCostType" />
                 </xsd:all>
@@ -10308,7 +10298,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -10601,7 +10590,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberPerTrackElement" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -10746,7 +10734,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberForOverallTrack" type="doubleBaseType" />
                     <xsd:element name="costPerUnit" type="doubleBaseType">
                         <xsd:annotation>
                             <xsd:documentation>Cost per unit in EUR.
@@ -10897,8 +10884,6 @@ marko.alder@dlr.de
             <xsd:extension base="complexBaseType">
                 <xsd:all>
                     <xsd:element name="costDescription" type="genericCostType" />
-                    <xsd:element name="numberOfPowerPacks" type="integerBaseType" />
-                    <xsd:element name="numberOfDriveUnits" type="integerBaseType" />
                     <xsd:element name="costPowerPacks" type="costPowerPacksType" />
                     <xsd:element name="costTrackGuidanceSystem" type="costTrackGuidanceSystemType" />
                     <xsd:element name="costDriveUnits" type="costDriveUnitsType" />
