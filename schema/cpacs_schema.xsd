@@ -3262,21 +3262,21 @@ marko.alder@dlr.de
         <xsd:complexContent>
             <xsd:extension base="complexBaseType">
                 <xsd:all>
-                    <xsd:element minOccurs="0" name="nonRecurringCost" type="doubleBaseType">
+                    <xsd:element minOccurs="0" name="nonRecurringCost" type="airportNonRecurringCostType">
                     </xsd:element>
-                    <xsd:element minOccurs="0" name="recurringCost" type="airportRecurringCostType">
+                    <xsd:element minOccurs="0" name="recurringCost" type="doubleBaseType">
                     </xsd:element>
                 </xsd:all>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="airportRecurringCostType">
+    <xsd:complexType name="airportNonRecurringCostType">
         <xsd:annotation>
             <xsd:appinfo>
                 <sd:schemaDoc>
                     <ddue:summary>
-                        <ddue:para>airportRecurringCostType</ddue:para>
+                        <ddue:para>airportNonRecurringCostType</ddue:para>
                     </ddue:summary>
                     <ddue:remarks>
                         <ddue:para/>
